@@ -44,18 +44,23 @@ daraus folgt:
 $C(a)$ =  $( i*w-y)^2$
 -->
 
+
+----
 Einschub: Kettenregel
 
 <p>
 <img src="img/Kettenregel2Knoten.png" width="200" >
 </p>
 
-$y(x)$ = $f(a_0 (a_1$(x) ) 
+Dieses Bild kann als folgende Funktion geschrieben werden:
 
+$Y(x)$ = $f(a_0 (a_1$(x) ) 
 
-$\large \frac{\partial {y}}{\partial x} = \frac{\partial {f(a_0(a_1(x))}}{\partial x} = \frac{\partial {a_0}}{\partial x} * \frac{\partial {Y}}{\partial a_0}$
+Anwendung der Kettenregel:
 
+$\large \frac{\partial {Y}}{\partial x} = \frac{\partial {f(a_0(a_1(x))}}{\partial x} = \frac{\partial {a_0}}{\partial x} * \frac{\partial {Y}}{\partial a_0}$
 
+-----
 
 Angewendet auf unser Netzwerk:
 
