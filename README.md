@@ -14,7 +14,7 @@ Im ersten
 Wir wollen nun zeigen, wie das Netz, durch anpassen der Gewichte, trainiert wird, um einen bestimmeten Ausgangswert zu erreichen.<br>
 Ziel ist es, den Wert vom Knoten (a) auf 0,5 zu tranieren, wenn der Eingangswert bei 1,5 ist.
 
-Das Gewicht (w) wird mit Zufallswerten initialiersiert. z.B. 0,8
+Das Gewicht (w) wird mit einem Zufallswerten initialiersiert. z.B. 0,8
 
 
 | input (i) | Gewünschter Output  | output (a) |
