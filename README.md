@@ -7,7 +7,7 @@ Im ersten
    Fall besteht das neuronale Netz nur aus einem Input-Layer Knoten (i) und einen Output-Layer Knoten (a).
 
 <p>
-<img src="img/zweiKnoten.png" width="400" >
+<img src="tree/main/img/zweiKnoten.png" width="400" >
 </p>
 
 Wir wollen nur sehen, wie das Netz, durch anpassen der Gewichte, trainiert einen bestimmeten Ausgangswert zu erreichen.<br>
