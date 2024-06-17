@@ -87,7 +87,7 @@ $w$' = $w$ - r *  $i$ * 2($a$ - y)
 
 Jetzt können wir das Gewicht so lange anpassen, bis das Gewicht sich auf einen Wert angenähert hat.
 
-Hier ein Beispiel in Python
+Beispiel in Python
 ```python
 
 #Random Values
