@@ -66,6 +66,7 @@ Angewendet auf unser Netzwerk:
 
 $\large \frac{\partial {y}}{\partial a}= \frac{\partial {a}}{\partial w} * \frac{\partial {C}}{\partial a}$ 
 
+Um sich langsam an den Wert für das Gewicht anzunähern, wird eine Lernrate $r$ eingeführt.
 Updaten der Gewichte mit der Lernrate $r$ 
 
 $\large w' = w - r *  \frac{\partial {C}}{\partial w}$ 
