@@ -2,10 +2,9 @@
 
 
 In Anlehnung ans das Video "The Absolutely Simplest Neural Network Backpropagation Example" von 
-Mikael Laine [^1], ist hier eine Erklärung, wie die Backpropergation von einem sehr einfachen neuronalen Netz funktioniert. Zu erst wird gezeigt, wie es mit zwei Knoten Funktioniert und dann wird der Backpropergation-Algorithmus auf ein Mehrlagenlayer-Netz angewendet.
+Mikael Laine [^1], ist hier eine Erklärung, wie die Backpropergation in einem sehr einfachen neuronalen Netz funktioniert. Zuerst wird gezeigt, wie es mit zwei Knoten funktioniert und dann wird der Backpropergation-Algorithmus auf ein Mehrlagenlayer-Netz ausgeweitet.
 
-Im ersten
-   Fall besteht das neuronale Netz nur aus einem Input-Layer Knoten (i) und einen Output-Layer Knoten (a).
+Im ersten Fall besteht das neuronale Netz nur aus einem Input-Layer Knoten (i) und einen Output-Layer Knoten (a).
 
 <p>
 <img src="img/zweiKnoten.png" width="400" >
@@ -14,7 +13,7 @@ Im ersten
 Wir wollen nun zeigen, wie das Netz, durch anpassen der Gewichte, trainiert wird, um einen bestimmeten Ausgangswert zu erreichen.<br>
 Ziel ist es, den Wert vom Knoten (a) auf 0,5 zu tranieren, wenn der Eingangswert bei 1,5 ist.
 
-Das Gewicht (w) wird mit einem Zufallswerten initialiersiert. z.B. 0,8
+Das Gewicht (w) wird mit einem Zufallswert initialiersiert. z.B. 0,8
 
 
 | input (i) | Gewünschter Output  | output (a) |
