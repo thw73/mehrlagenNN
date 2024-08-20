@@ -7,7 +7,7 @@ Mikael Laine [^1], ist hier eine Erklärung, wie die Backpropergation in einem s
 Im ersten Fall besteht das neuronale Netz nur aus einem Input-Layer Knoten (i) und einen Output-Layer Knoten (a).
 
 <p>
-<img src="img/zweiKnoten.png" width="400" >
+<img src="img/zweiKnoten_v2.png" width="400" >
 </p>
 
 Wir wollen nun zeigen, wie das Netz, durch anpassen der Gewichte, trainiert wird, um einen bestimmeten Ausgangswert zu erreichen.<br>
@@ -16,31 +16,31 @@ Ziel ist es, den Wert vom Knoten (a) auf 0,5 zu tranieren, wenn der Eingangswert
 Das Gewicht (w) wird mit einem Zufallswert initialiersiert. z.B. 0,8
 
 
-| input (i) | Gewünschter Output  | output (a) |
+| input (x) | Gewünschter Output  | output ($a_0$) |
 | ----------| --------------------|------------|
 |  1,5      |  0,5                |  1,2       |
 
 
-$a$= $i$ * $w$ = 1,5 * 0,8 
+$a_0$= $x$ * $w_0$ = 1,5 * 0,8 
 
-Als Fehlerfunktion C am Ausgang wird der quadratische Fehler genommen: $c$ = $(a-y)^2$
+Als Fehlerfunktion (Lossfunktion) L am Ausgang wird der quadratische Fehler genommen: $L$ = $(a_0-y)^2$
 
 <p>
-<img src="img/Fehlerberechnung.png" width="400" >
+<img src="img/Fehlerberechnung_v2.png" width="400" >
 </p>
 
 
-Die Fehlerfunktion wird auch Kostenfunktion genannt $C$ 
 
-$C(a)$ = $(a-y)^2$
 
-$a(w)$ = $i$ * $w$
+$L(a_0)$ = $(a_0-y)^2$
+
+$a_0(w_0)$ = $x$ * $w_0$
 
 <!--
 
 daraus folgt:
 
-$C(a)$ =  $( i*w-y)^2$
+$L(a_0)$ =  $( x*w_0-y)^2$
 -->
 
 
@@ -63,27 +63,27 @@ $\large \frac{\partial {Y}}{\partial x} = \frac{\partial {f(a_0(a_1(x))}}{\parti
 
 Angewendet auf unser Netzwerk:
 
-$\large \frac{\partial {y}}{\partial a}= \frac{\partial {a}}{\partial w} * \frac{\partial {C}}{\partial a}$ 
+$\large \frac{\partial {y}}{\partial a_0}= \frac{\partial {a_0}}{\partial w_0} * \frac{\partial {L}}{\partial a_0}$ 
 
 Um sich langsam an den Wert für das Gewicht anzunähern, wird eine Lernrate $r$ eingeführt.
 Updaten der Gewichte mit der Lernrate $r$ 
 
-$\large w' = w - r *  \frac{\partial {C}}{\partial w}$ 
+$\large w_0' = w_0 - r *  \frac{\partial {L}}{\partial w_0}$ 
 
 
-$\large w' = w - r * \frac{\partial {a}}{\partial w} * \frac{\partial {C}}{\partial a}$ 
+$\large w_0' = w_0 - r * \frac{\partial {a_0}}{\partial w_0} * \frac{\partial {L}}{\partial a_0}$ 
 
 mit 
 
-$\large \frac{\partial {C}}{\partial a} = \frac{\partial }{\partial w} (a-y)^2 = 2(a - y)$
+$\large \frac{\partial {L}}{\partial a_0} = \frac{\partial }{\partial w_0} (a_0-y)^2 = 2(a_0 - y)$
 
 und
 
-$\large \frac{\partial {a}}{\partial w} = \frac{\partial ({w * i})}{\partial w} = i$
+$\large \frac{\partial {a_0}}{\partial w_0} = \frac{\partial ({w_0 * x})}{\partial w_0} = x$
 
 ergibt sich:
 
-$w$' = $w$ - r *  $i$ * 2($a$ - y)
+$w_0$' = $w_0$ - r *  $x$ * 2($a_0$ - y)
 
 Jetzt können wir das Gewicht so lange anpassen, bis das Gewicht sich auf einen Wert angenähert hat.
 
@@ -95,7 +95,7 @@ a= 0.1
 w= 0.1
 
 #Input = 1.5
-i= 1.5
+x= 1.5
 
 #Lernrate
 r = 0.1
@@ -105,8 +105,8 @@ r = 0.1
 y=0.5
 
 for x in range (0,15):
-    a=w * i  
-    w=w-r*i*2*(a-y)
+    a=w * x  
+    w=w-r*x*2*(a-y)
 
 ``` 
 
