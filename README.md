@@ -155,11 +155,11 @@ $\large \frac{\partial}{\partial x} y= f(a_0 (a_1 (a_2(x) ) ) )
 
 somit ergibt sich für $w_1$
 
-$\large w_1 = w_1 - r * \frac{\partial {a_1}}{\partial w_1} * \frac{\partial {a_0}}{\partial a_1} * \frac{\partial {C}}{\partial a_0}$ 
+$\large w_1 = w_1 - r * \frac{\partial {a_1}}{\partial w_1} * \frac{\partial {a_0}}{\partial a_1} * \frac{\partial {L}}{\partial a_0}$ 
 
 wobei
 
-$\large \frac{\partial {C}}{\partial a_0} = 2(a_0 - y)$
+$\large \frac{\partial {L}}{\partial a_0} = 2(a_0 - y)$
 
 $\large \frac{\partial {a_0}}{\partial a_1} = \frac{\partial ({w_0 * a_1})}{\partial a_1} = w_0$
 
@@ -235,7 +235,7 @@ $\large \frac{\partial}{\partial x} f(a_0 (a_1 (a_2 (a_3(x) ) ) ) ) =  \frac{\pa
 
 $w_0$ und $w_1$ wurden ja schon berechnet.
 
-$\large w_2' = w_2 - r * \frac{\partial {a_1}}{\partial w_2} * \frac{\partial {a_1}}{\partial a_2} * \frac{\partial {a_0}}{\partial a_1} * \frac{\partial {C}}{\partial a_0}$ 
+$\large w_2' = w_2 - r * \frac{\partial {a_1}}{\partial w_2} * \frac{\partial {a_1}}{\partial a_2} * \frac{\partial {a_0}}{\partial a_1} * \frac{\partial {L}}{\partial a_0}$ 
 
 
 $\large \frac{\partial {a_1}}{\partial a_2} = \frac{\partial ({w_1 * a_2})}{\partial a_2} = w_1$
@@ -246,7 +246,7 @@ $\large \frac{\partial {a_1}}{\partial w_2} = \frac{\partial ({w_2 * a_3})}{\par
 $\large w_2' = w_2 - r *  a_3 * w_1 * w_0 * 2(a_0 - y)$
 
 
-$\large w_3' = w_3 - r * \frac{\partial {a_3}}{\partial w_3} * \frac{\partial {a_2}}{\partial a_3} * \frac{\partial {a_1}}{\partial a_2} * \frac{\partial {a_0}}{\partial a_1} * \frac{\partial {C}}{\partial a_0}$ 
+$\large w_3' = w_3 - r * \frac{\partial {a_3}}{\partial w_3} * \frac{\partial {a_2}}{\partial a_3} * \frac{\partial {a_1}}{\partial a_2} * \frac{\partial {a_0}}{\partial a_1} * \frac{\partial {L}}{\partial a_0}$ 
 
 $\large \frac{\partial {a_2}}{\partial a_3} = \frac{\partial ({w_2 * a_3})}{\partial a_3} = w_2$
 
