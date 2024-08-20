@@ -53,7 +53,7 @@ Einschub: Kettenregel
 
 Dieses Bild kann als folgende Funktion geschrieben werden:
 
-$Y(x)$ = $f(a_0 (a_1$(x) ) 
+$Y(x)$ = $f(a_0 (a_1$(x) ) )
 
 Anwendung der Kettenregel:
 
