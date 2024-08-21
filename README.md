@@ -1,4 +1,4 @@
-# Backpropagation im mehrlagigen neuronalen Netze
+# Backpropagation in mehrlagigen neuronalen Netze
 
 
 In Anlehnung ans das Video "The Absolutely Simplest Neural Network Backpropagation Example" von 
